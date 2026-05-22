@@ -55,9 +55,9 @@ public class ValenbiciAPP
                 features.forEach((x) -> {
                 	// Convierto el array a un Objeto
                     JSONObject estacion = (JSONObject) x;
-                    // Accedo a sus attributes 
+                    // Accedo a attributes 
                     JSONObject attributes = estacion.getJSONObject("attributes");
-                    // En attributes adress y available
+                    // En attributes address y available
                     String direccion = attributes.getString("address");
                     int disponibles = attributes.getInt("available");
                     // Las pinto en la terminal
